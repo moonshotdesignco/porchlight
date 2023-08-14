@@ -78,18 +78,22 @@ a.homelink:active {
 
 .bioblock {
   display: grid;
-  grid: auto / auto 1fr;
+  grid: auto 1fr / auto;
   gap: 1em;
   margin: auto;
-  p {
-    margin: auto;
-    text-align: left;
+  @media (min-width: 600px) {
+    grid: auto / auto 1fr;
+    max-width: 900px;
+    p {
+      margin: auto;
+      text-align: left;
+    }
   }
 }
 
 #logo {
   width: 100%;
-  max-width: 400px;
+  max-width: 200px;
   margin: auto;
 }
 
